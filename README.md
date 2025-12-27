@@ -1,13 +1,13 @@
 # Blender Auto Box Joint Generator
 
-A smart Blender Python script to instantly create **Box Joints** (also known as **Finger Joints** or **Comb Joints**) between two adjacent objects.
+A Blender Python script to create **Box Joints** (also known as **Finger Joints** or **Comb Joints**) between two adjacent objects.
 
 Designed for **3D Printing**, **CNC**, and **Laser Cut** workflows, this tool automates the tedious process of measuring, aligning, and applying boolean operations for joinery.
 
 ## 🚀 Features
 
 *   **Smart Dimension Detection:** Automatically calculates tooth width and thickness based on the selected face geometry (World Space).
-*   **Auto-Alignment:** Aligns the tooth orientation perfectly with the face normal and tangent.
+*   **Auto-Alignment:** Aligns the tooth orientation with the face normal and tangent.
 *   **Adjacent Object Detection:** Uses Raycasting to automatically find the object touching the selected face.
 *   **Automatic Booleans:**
     *   Applies a **Union** modifier to the source object.
@@ -42,7 +42,7 @@ Open the script in the Text Editor and look for the **User Parameters** section 
 
 ```python
 # --- USER PARAMETERS ---
-extra_size = 1.0  # Tolerance: how much larger the cutter tooth is
+extra_size = 0.5  # Tolerance: how much larger the cutter tooth is
 # -----------------------
 ```
 
@@ -50,18 +50,3 @@ extra_size = 1.0  # Tolerance: how much larger the cutter tooth is
     *   Value is in Blender Units (usually meters or millimeters depending on your scene settings).
     *   Increase this value for **CNC** routing to account for bit radius or for **3D printing** to ensure a loose fit.
     *   Set to `0.0` for a zero-tolerance interference fit.
-
-## 🎯 Ideal For
-
-*   **Woodworking:** Designing joinery for furniture.
-*   **CNC Routers:** Creating dog-bone style or standard box joints.
-*   **Laser Cutting:** Prototyping boxes and enclosures with **Finger Joints**.
-*   **3D Printing:** Creating split parts that snap together.
-
-## 🤝 Contributing
-
-Pull requests are welcome. For major changes, please open an issue first to discuss what you would like to change.
-
-## 📄 License
-
-[MIT](https://choosealicense.com/licenses/mit/)

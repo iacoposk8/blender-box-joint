@@ -4,6 +4,8 @@ A Blender Python script to create **Box Joints** (also known as **Finger Joints*
 
 Designed for **3D Printing**, **CNC**, and **Laser Cut** workflows, this tool automates the tedious process of measuring, aligning, and applying boolean operations for joinery.
 
+![Cover of the project](images/cover.png)
+
 ## 🚀 Features
 
 *   **Smart Dimension Detection:** Automatically calculates tooth width and thickness based on the selected face geometry (World Space).
@@ -22,6 +24,8 @@ Designed for **3D Printing**, **CNC**, and **Laser Cut** workflows, this tool au
 3.  Go to the **Scripting** tab.
 4.  Click **New** or **Open** and load the script.
 5.  (Optional) You can save this in your startup file or turn it into a button if you are familiar with Blender API.
+
+![Video tutorial](images/video.gif)
 
 ## 📖 Usage
 
